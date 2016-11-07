@@ -4,5 +4,9 @@ html{
 }
 
 #home{
+text-align: center;
 background-color:gray;
+
+
+margin:10%;
 }
