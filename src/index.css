@@ -30,17 +30,28 @@ animation: bg-color 15s infinite;
 }
 
 #pic{
-  height: 90vh;
+  height: 80vh;
 }
 
 #header-text{
   text-align: center;
   font-weight: bold;
+  animation: col 3s infinite;
+}
+
+
+@keyframes col{
+  0% { color: #e74c3c; }
+  20% { color: #f1c40f; }
+  40% { color: #1abc9c; }
+  60% { color: #3498db; }
+  80% { color: #9b59b6; }
+  100% { color: #e74c3c; }
 }
 
 #contents{
-  width: 80vw;
-  height: 2000px;
+  width: 90vw;
+  height: 90vw;
   margin: 10% auto;
   border-radius: 40px;
   background-color: #F5F5F5;
