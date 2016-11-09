@@ -7,28 +7,45 @@ html,body{
 
 
 #home{
-visibility: hidden;
-width: auto;
+visibility:hidden;
+width: 100vw;
 height: auto;
-background-color:#F5F5F5;
+animation: bg-color 15s infinite;
 }
 
 #header{
-  width:100vw;
+  width:95vw;
   height: 20vh;
-  background-color:#16A6B6;
+  margin: 0 auto 5vh auto;
+  background-color: #0E7AC4;
+}
+
+
+@keyframes bg-color {
+  0% { background-color: #e74c3c; }
+  20% { background-color: #f1c40f; }
+  40% { background-color: #1abc9c; }
+  60% { background-color: #3498db; }
+  80% { background-color: #9b59b6; }
+  100% { background-color: #e74c3c; }
+}
+
+#header-text{
+  font-weight: bold;
 }
 
 #main{
-  width: 100vw;
+  width: 95vw;
   height: 2000px;
+  margin: auto;
   background-color: #F5F5F5;
 
 }
 
 #footer{
-  width: 100vw;
+  width: 95vw;
   height: 100px;
+  margin: auto;
   background-color: #FF6860;
 
 }
