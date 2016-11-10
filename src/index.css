@@ -30,12 +30,14 @@ animation: bg-color 15s infinite;
 }
 
 #pic{
-  height: 80vh;
+  height: 75vh;
 }
 
 #header-text{
+  height: auto;
   text-align: center;
   font-weight: bold;
+  font-size: 35pt;
   animation: col 3s infinite;
 }
 
@@ -49,11 +51,11 @@ animation: bg-color 15s infinite;
   100% { color: #e74c3c; }
 }
 
-#contents{
+.content{
   width: 90vw;
   height: 90vw;
   margin: 10% auto;
-  border-radius: 40px;
+  border-radius: 150px;
   background-color: #F5F5F5;
 }
 
