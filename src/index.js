@@ -35,9 +35,10 @@ function box(){
 
       if(scrollY >= 100){
         $("#header").css({
+          "width":"100%",
           "height":"25vh",
-          "animation-name": "head-key",
-          "animation-duration": "1s",
+          "animation-name": "head-key1",
+          "animation-duration": "0.5s",
           "animation-iteration-count": "1",
         });
 

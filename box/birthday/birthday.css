@@ -1,0 +1,22 @@
+html,body{
+  margin:0;
+  padding:0;
+}
+
+body{
+    background-color: #222;
+}
+
+#main{
+  width: 600px;
+  margin:50px auto;
+  background-color: #EEE;
+  padding:10%;
+}
+
+#result{
+  display: none;
+  border: dashed 4px #AAA;
+  background-color: #FFF;
+  padding: 10px,20px;
+}

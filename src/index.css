@@ -8,7 +8,7 @@ html,body{
 
 #home{
 visibility:hidden;
-width: 100vw;
+width: 100%;
 height: auto;
 animation: bg-color 15s infinite;
 }
@@ -23,16 +23,19 @@ animation: bg-color 15s infinite;
 }
 
 #header{
-  width:100vw;
+  width:100%;
   height: 100vh;
   margin: 0 auto 0 auto;
   background-color: #0E7AC4;
 }
 
-@keyframes head-key{
+@keyframes head-key1{
   0%{height: 100vh;}
-  100%{height: 30vh;}
+  100%{height: 20vh;}
+
 }
+
+
 
 #pic{
   height: 80%;
@@ -64,8 +67,10 @@ animation: bg-color 15s infinite;
   background-color: #F5F5F5;
 }
 
+
+
 #footer{
-  width: 100vw;
+  width: 100%;
   height: 20vh;
   background-color: #FF6860;
 
