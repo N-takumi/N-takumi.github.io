@@ -7,8 +7,10 @@ function box(){
   function init(){
 
 
-
+      if(localStorage.getItem("pass") == null){
       pass();
+      }
+
   }
 
 
@@ -21,8 +23,15 @@ function box(){
         "visibility":"visible",
       });
 
+    localStorage.setItem("pass","true");
+
     }else{
       window.alert('errer!!');
+
+      $("#home").css({
+        "visibility":"hidden",
+      });
+
     }
 
   }
