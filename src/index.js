@@ -2,8 +2,6 @@ function box(){
 
   var scrollY = 0;
 
-
-
   function init(){
 
       if(localStorage.getItem("pass") != "true"){
@@ -17,11 +15,11 @@ function box(){
   function pass(){//パスワード認証
     user = window.prompt("パスワードを入力してください","");
 
-    if(user == "pass"){
+    if(user == "pass"){//正しい場合
 
     localStorage.setItem("pass","true");
 
-    }else{
+    }else{//異なる場合
       window.alert('errer!!');
 
       $("#home").css({
@@ -38,17 +36,18 @@ function box(){
 
       $('#sctext').text(scrollY + 'px');
 
-      if(scrollY >= 100){
+      if(scrollY >= 50){
 
         $("#header").css({
           "width":"100%",
-          "height":"20vh",
+          "height":"10vh",
           "animation-name": "head-key1",
           "animation-duration": "0.5s",
           "animation-iteration-count": "1",
         });
 
-        $("#header-text").hide();
+        $("#header-text").fadeOut();
+        $("#logo").fadeIn();
       }
 
 
