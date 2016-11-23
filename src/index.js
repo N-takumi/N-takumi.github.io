@@ -6,8 +6,7 @@ function box(){
 
   function init(){
 
-
-      if(localStorage.getItem("pass") == null){
+      if(localStorage.getItem("pass") != "true"){
       pass();
       }
 
@@ -19,9 +18,6 @@ function box(){
     user = window.prompt("パスワードを入力してください","");
 
     if(user == "pass"){
-      $("#home").css({
-        "visibility":"visible",
-      });
 
     localStorage.setItem("pass","true");
 
@@ -43,9 +39,10 @@ function box(){
       $('#sctext').text(scrollY + 'px');
 
       if(scrollY >= 100){
+
         $("#header").css({
           "width":"100%",
-          "height":"25vh",
+          "height":"20vh",
           "animation-name": "head-key1",
           "animation-duration": "0.5s",
           "animation-iteration-count": "1",

@@ -26,13 +26,12 @@ animation: bg-color 15s infinite;
   width:100%;
   height: 100vh;
   margin: 0 auto 0 auto;
-  background-color: #0E7AC4;
+  background-color: #363947;
 }
 
 @keyframes head-key1{
   0%{height: 100vh;}
   100%{height: 20vh;}
-
 }
 
 
@@ -63,8 +62,16 @@ animation: bg-color 15s infinite;
   width: 90vw;
   height: 45vw;
   margin: 10% auto;
-  border-radius: 80px;
+  border-radius: 10px;
   background-color: #F5F5F5;
+}
+
+.sentence{
+  text-align: center;
+
+}
+.sentence p{
+    border-bottom: dashed 2px;
 }
 
 
@@ -72,6 +79,6 @@ animation: bg-color 15s infinite;
 #footer{
   width: 100%;
   height: 20vh;
-  background-color: #FF6860;
+  background-color: #0E7AC4;
 
 }
