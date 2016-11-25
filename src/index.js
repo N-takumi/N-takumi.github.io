@@ -4,16 +4,13 @@ function box(){
 
   function init(){
 
-
-      if(localStorage.getItem("pass") != "true"){//初回アクセス時のみパスを聞く
+      if(localStorage.getItem("pass") != "true"){
       pass();
       }
 
-      scroll();//すくろーる処理
-
   }
 
-//--------関数-------------------------------------------------->
+
 
   function pass(){//パスワード認証
     user = window.prompt("パスワードを入力してください","");
@@ -23,22 +20,23 @@ function box(){
     localStorage.setItem("pass","true");
 
     }else{//異なる場合
-      window.alert('404 not found!!');//めっちゃ煽る
+      window.alert('errer!!');
 
       $("#home").css({
         "visibility":"hidden",
       });
+
     }
 
   }
 
-  function scroll(){//すくろーる処理
+  function scroll(){
     $(window).scroll(function(){
-      scrollY = $(window).scrollTop();//すくろーる位置はピクセルで表す
+      scrollY = $(window).scrollTop();
 
-      $('#sctext').text('現在のすくろーる位置 :' +　scrollY + 'px');
+      $('#sctext').text(scrollY + 'px');
 
-      if(scrollY >= 80){
+      if(scrollY >= 50){
 
         $("#header").css({
           "width":"100%",
@@ -48,22 +46,21 @@ function box(){
           "animation-iteration-count": "1",
         });
 
-        $("#header-text").slideUp();
-        $("#logo").slideDown();
+        $("#header-text").fadeOut();
+        $("#logo").fadeIn();
       }
 
 
     });
   }
 
-//---------------------------------------------------------------------->
-
   init();
-
+  scroll();
 
 }
 
 $(function(){
+
 
   box();
 
