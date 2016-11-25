@@ -1,0 +1,8 @@
+function todo(){
+
+}
+
+
+$(function(){
+  todo();
+});
