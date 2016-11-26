@@ -1,6 +1,6 @@
 function todo(){
 
-  varsion = 0.1;
+  version = "0.1";
 
 
   function init(){
@@ -30,6 +30,7 @@ function todo(){
 
   //localStorageにtodoがあれば表示/バージョンの更新
   function load(){
+  $("#title").text("Todo List_"+"ver"+version);
     if(localStorage.length > 0){
       for(i = 1;i <= localStorage.length;i++){
       $("#list").append($("<h1>").text("・"+localStorage.getItem("todo"+i)));
