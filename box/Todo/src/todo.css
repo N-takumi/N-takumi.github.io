@@ -21,3 +21,42 @@ body{
   width: 100%;
   background-color: darkgray;
 }
+
+#title{
+  display: inline-block;
+  font-weight: bold;
+  font-size: 30pt;
+  text-align: center;
+  margin:3% 3%;
+  height: auto;
+  width: auto;
+}
+
+#addbtn{
+  display: inline-block;
+  background-color: white;
+  font-weight: bold;
+  font-size: 30pt;
+  margin:3% 3%;
+  height: auto;
+  width: auto;
+}
+
+#resbtn{
+  display: inline-block;
+  background-color: white;
+  font-weight: bold;
+  font-size: 30pt;
+  margin:3% 3%;
+  height: auto;
+  width: auto;
+}
+
+#list{
+  height: auto;
+  background-color: white;
+}
+
+.todo{
+  border-bottom: 1px solid;
+}

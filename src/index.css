@@ -5,12 +5,15 @@ html,body,p{
   margin: 0;
 }
 
+html{
+  animation: bg-color 30s infinite;
+}
+
 
 #home{
 visibility:visible;
 width: 100%;
 height: auto;
-animation: bg-color 30s infinite;
 }
 
 .img{
