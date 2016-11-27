@@ -19,9 +19,7 @@ function todo(){
     //[リセットボタン]でTodo全削除
     $("#resbtn").on('click', function(){
 
-      for(i = 1;i <= localStorage.length;i++){
-        localStorage.removeItem("todo" + i );
-      }
+      localStorage.clear();
       $("#list h1").remove();
 
     });
