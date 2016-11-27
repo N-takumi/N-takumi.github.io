@@ -95,6 +95,13 @@ height: auto;
   background-color: #F1F0EE;
 }
 
+.sec{
+  text-align: center;
+}
+.sec h1{
+  border-bottom: 1px solid;
+}
+
 
 .sentence{
   text-align: center;
