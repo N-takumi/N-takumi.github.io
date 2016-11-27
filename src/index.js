@@ -5,9 +5,9 @@ function box(){
   function init(){
 
 
-      if(localStorage.getItem("pass") != "true"){//初回アクセス時のみパスを聞く
-      pass();
-      }
+      //if(localStorage.getItem("pass") != "true"){//初回アクセス時のみパスを聞く
+      //pass();
+      //}
 
       scroll();//すくろーる処理
 
