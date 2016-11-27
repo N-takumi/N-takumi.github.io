@@ -10,7 +10,8 @@ function todo(){
     //[+ボタン]でTodoを追加する
     $("#addbtn").on('click', function(){
       todo = window.prompt("Todoを追加します","");
-      if(todo != null){
+      console.log(todo);
+      if(todo != null　&& todo != " "){
       localStorage.setItem("todo"+(localStorage.length+1),todo);
       $("#list").append($("<h1>").html("・"+localStorage.getItem("todo"+(localStorage.length))));
       }
