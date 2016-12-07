@@ -22,7 +22,6 @@ function todo(){
 
       localStorage.clear();
       $("#list h1").remove();
-
     });
 
 
