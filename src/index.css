@@ -102,7 +102,8 @@ height: auto;
 #sec_welcome{
   animation: col 10s infinite;
   font-weight: bold;
-  font-size: 20vh;
+  font-size: 10vw;
+  width: auto;
   border-bottom: 1px solid;
 }
 
